@@ -1,15 +1,23 @@
 body,html{
     display: flex;
     flex-direction: column;
+    font-family: sans-serif;
 }
 /* Small devices (phones and pocket devices, 576 and up) */
 /* Moved ending brace so that all changes happened on devices 576px and up */
 @media screen and (max-width:576px) {
     .alert-info {
+        height: 25px;
         background-color: lightblue;
         display: flex;
-        border: solid lightgrey;
-
+        justify-content: center;
+        align-items: center;
+        border: 1px solid lightgrey;
+    }
+    .alert-info a{
+        text-decoration: none;
+        color: black;
+        /*font-family: sans-serif;*/
     }
     div a {
         text-align: center;
@@ -37,6 +45,8 @@ body,html{
         padding-bottom: 1em;
         position: relative;
         font-family: "Comic Sans MS", sans-serif;
+        width: 100%;
+        background: lightgray;
     }
     /*  cited_source: https://www.w3schools.com/css/css_rwd_images.asp  */
     .header-img img{
