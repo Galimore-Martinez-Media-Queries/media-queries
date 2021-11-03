@@ -38,9 +38,10 @@ body,html{
         position: relative;
         font-family: "Comic Sans MS", sans-serif;
     }
-    /*trying to figure out how to have img resized*/
-    .header-img{
-        max-width: 576px;
+    /*  cited_source: https://www.w3schools.com/css/css_rwd_images.asp  */
+    .header-img img{
+        width: 100%;
+        height: auto;
     }
 }
 /*!* Medium devices (tablets, 768px and up) *!*/
