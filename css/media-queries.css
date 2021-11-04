@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-body,html{
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
-}
+
 /* Small devices (phones and pocket devices, 576 and up) */
 /* Moved ending brace so that all changes happened on devices 576px and up */
 @media screen and (max-width:576px) {
+    body,html{
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+    }
     .alert-info {
         height: 25px;
         background-color: lightblue;
@@ -59,13 +60,59 @@ body,html{
     }
     #social-media-links{
         float: right;
+        position: relative;
+        padding-top: 1em;
+    }
+   footer>p {
+        position: absolute;
     }
 }
+
 /*!* Medium devices (tablets, 768px and up) *!*/
 /*@media screen and (min-width:768px) { !* ... *! }*/
 
 /*!* Large devices (desktops, 992px and up) *!*/
-/*@media screen and (min-width:992px) { !* ... *! }*/
+@media screen and (min-width:992px) {
+    .hidden-on-desktop {
+        display: none;
+    }
+    h1 {
+        float: left;
+        display: inline;
+        /*position: absolute;*/
+        padding-bottom: 1em;
+        width: 0;
+        height: 0;
+    }
+    nav {
+        float: right;
+        display: inline;
+    }
+    .header-img img{
+        width: 100%;
+        height: auto;
+    }
+    .nav-links {
+        display: flex;
+        float: right;
+        padding: 1em;
+        text-decoration: none;
+        list-style-type: none;
+        position: relative;
+
+
+    }
+    #main .main, section .sub-section {
+        display: inline;
+    }
+    /*.main {*/
+    /*    flex-wrap: wrap;*/
+    /*    float: left;*/
+    /*}*/
+    /*.sub-section {*/
+    /*    float: right;*/
+    /*}*/
+}
 
 /*!* Extra large devices (large desktops, 1200px and up) *!*/
 /*@media screen and (min-width:1200px) { !* ... *! }*/
