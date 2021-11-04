@@ -115,23 +115,23 @@
     .sub-section {
         float: left;
         width: 50%;
-        /*clear: both;*/
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    footer>p{
+        display: block;
     }
     #social-media-links{
+        display: block;
+        margin-left: 80vw;
+        /*float: right;*/
+    }
+    #social-media-links i{
         float: right;
-        position: fixed;
-        padding-top: 10em;
     }
-    footer>p {
-        position: fixed;
-    }
-    /*.main {*/
-    /*    flex-wrap: wrap;*/
-    /*    float: left;*/
-    /*}*/
-    /*.sub-section {*/
-    /*    float: right;*/
-    /*}*/
 }
 
 /*!* Extra large devices (large desktops, 1200px and up) *!*/
